@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi Veri 💖</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      cursor: pointer;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+  </style>
+</head>
+<body onclick="playMusic()">
+  <h1>Veri 💖</h1>
+
+  <audio id="miAudio">
+    <source src="https://github.com/Gabriskaveriel/Para-mi-Veri/raw/main/Moonlight%20on%20the%20River.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script>
+    function playMusic() {
+      const audio = document.getElementById("miAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
